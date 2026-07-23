@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --brand-primary: #1f6e7a;
+  --brand-primary-dark: #154f59;
+  --brand-primary-soft: #60a8b2;
+  --brand-primary-tint: #eaf4f5;
+  --brand-ink: #262320;
+  --brand-ink-soft: #5b564f;
+  --brand-bg-soft: #f6faf9;
+  --brand-border: #e1e8e8;
+}
+
+@theme inline {
+  --color-primary: var(--brand-primary);
+  --color-primary-dark: var(--brand-primary-dark);
+  --color-primary-soft: var(--brand-primary-soft);
+  --color-primary-tint: var(--brand-primary-tint);
+  --color-ink: var(--brand-ink);
+  --color-ink-soft: var(--brand-ink-soft);
+  --color-bg-soft: var(--brand-bg-soft);
+  --color-border: var(--brand-border);
+  --font-sans: var(--font-pretendard);
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: var(--font-sans), "Pretendard", -apple-system, sans-serif;
+}
+
+::selection {
+  background: var(--color-primary-soft);
+  color: white;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
