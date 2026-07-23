@@ -74,10 +74,10 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt={`${siteConfig.name} 로고`}
-            width={583}
-            height={133}
+            width={2164}
+            height={726}
             priority
-            className="h-8 w-auto lg:h-10"
+            className="h-12 w-auto lg:h-16"
           />
         </Link>
 
