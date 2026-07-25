@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import NoticePopup from "@/components/NoticePopup";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Facilities from "@/components/Facilities";
@@ -15,6 +16,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <NoticePopup />
       <Header />
       <main>
         <Hero />
