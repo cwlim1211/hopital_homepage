@@ -3,11 +3,11 @@ import { siteConfig } from "@/lib/site-config";
 
 const CHANNELS = [
   {
-    icon: Video,
-    title: `${siteConfig.name.replace("통증의학과의원", "")} 유튜브`,
-    desc: "통증 질환 정보와 병원 소식을 영상으로 전하는 공식 유튜브 채널입니다.",
-    cta: "유튜브에서 보기",
-    href: siteConfig.youtubeUrl,
+    icon: BookOpen,
+    title: `${siteConfig.name.replace("통증의학과의원", "")} 네이버 블로그`,
+    desc: "원장이 직접 작성하는 질환 정보와 치료 이야기를 연재합니다.",
+    cta: "블로그에서 읽기",
+    href: siteConfig.naverBlogUrl,
   },
   {
     icon: Tv,
@@ -17,11 +17,11 @@ const CHANNELS = [
     href: siteConfig.naverTvUrl,
   },
   {
-    icon: BookOpen,
-    title: `${siteConfig.name.replace("통증의학과의원", "")} 네이버 블로그`,
-    desc: "의료진이 직접 작성하는 질환 정보와 치료 이야기를 연재합니다.",
-    cta: "블로그에서 읽기",
-    href: siteConfig.naverBlogUrl,
+    icon: Video,
+    title: `${siteConfig.name.replace("통증의학과의원", "")} 유튜브`,
+    desc: "통증 질환 정보와 병원 소식을 영상으로 전하는 공식 유튜브 채널입니다.",
+    cta: "유튜브에서 보기",
+    href: siteConfig.youtubeUrl,
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Media() {
         {CHANNELS.map(({ icon: Icon, title, desc, cta, href }) => (
           <div
             key={title}
-            className="flex flex-col rounded-2xl border border-border bg-white p-6 transition-shadow hover:shadow-md hover:shadow-primary/5"
+            className="flex flex-col rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/15"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-tint text-primary">
               <Icon size={24} aria-hidden="true" />

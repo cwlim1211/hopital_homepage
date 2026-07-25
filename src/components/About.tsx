@@ -44,7 +44,17 @@ export default function About() {
       </div>
 
       <div className="mt-12 grid gap-12 md:grid-cols-2 md:items-start lg:gap-16">
-        <div>
+        <div className="relative">
+          <Image
+            src="/snu-emblem.png"
+            alt=""
+            aria-hidden="true"
+            width={2116}
+            height={2195}
+            unoptimized
+            className="pointer-events-none absolute left-1/2 top-24 -z-10 w-72 -translate-x-1/2 opacity-15 sm:w-80 lg:w-96"
+          />
+
           <p className="text-[1.2rem] font-extrabold leading-[1.6] text-primary">
             통증의 원인을 정확히 찾고, 근본적인 회복까지 함께합니다.
           </p>

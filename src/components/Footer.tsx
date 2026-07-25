@@ -13,7 +13,7 @@ export default function Footer() {
               alt={`${siteConfig.name} 로고`}
               width={2164}
               height={726}
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
             <div className="mt-4 space-y-1 text-[0.9rem] leading-relaxed text-ink-soft">
               <p>

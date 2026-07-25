@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Facilities from "@/components/Facilities";
+import CoreValues from "@/components/CoreValues";
 import Media from "@/components/Media";
 import Services from "@/components/Services";
 import NerveBlock from "@/components/NerveBlock";
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <About />
         <Facilities />
+        <CoreValues />
         <Media />
         <Services />
         <NerveBlock />

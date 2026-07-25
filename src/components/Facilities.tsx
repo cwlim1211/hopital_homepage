@@ -47,7 +47,7 @@ export default function Facilities() {
           {FACILITIES.map(({ image, title, desc }) => (
             <div
               key={title}
-              className="overflow-hidden rounded-2xl border border-border bg-white transition-shadow hover:shadow-md hover:shadow-primary/5"
+              className="overflow-hidden rounded-2xl border border-border bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/15"
             >
               <div className="relative aspect-[4/3] w-full bg-bg-soft">
                 <Image

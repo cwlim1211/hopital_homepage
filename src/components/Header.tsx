@@ -13,6 +13,7 @@ const NAV_ITEMS = [
     children: [
       { href: "#about", label: "인사말 · 의료진소개" },
       { href: "#facilities", label: "장비 · 시설" },
+      { href: "#core-values", label: "핵심가치" },
       { href: "#media", label: "영상 · 블로그" },
     ],
   },
@@ -77,7 +78,7 @@ export default function Header() {
             width={2164}
             height={726}
             priority
-            className="h-12 w-auto lg:h-16"
+            className="h-[3.75rem] w-auto lg:h-[4.75rem]"
           />
         </Link>
 

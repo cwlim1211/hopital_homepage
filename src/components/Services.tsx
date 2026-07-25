@@ -71,7 +71,7 @@ export default function Services() {
             );
 
             const className =
-              "rounded-2xl border border-border bg-white p-6 transition-shadow hover:shadow-md hover:shadow-primary/5";
+              "rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/15";
 
             return href ? (
               <a key={title} href={href} className={className}>
