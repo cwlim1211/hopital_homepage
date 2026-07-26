@@ -14,6 +14,7 @@ const NAV_ITEMS = [
       { href: "#about", label: "인사말 · 의료진소개" },
       { href: "#facilities", label: "장비 · 시설" },
       { href: "#core-values", label: "핵심가치" },
+      { href: "#branches", label: "지점안내" },
       { href: "#media", label: "영상 · 블로그" },
     ],
   },

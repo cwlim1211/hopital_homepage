@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import NoticePopup from "@/components/NoticePopup";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Branches from "@/components/Branches";
 import Facilities from "@/components/Facilities";
 import CoreValues from "@/components/CoreValues";
 import Media from "@/components/Media";
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <Facilities />
         <CoreValues />
+        <Branches />
         <Media />
         <Services />
         <NerveBlock />

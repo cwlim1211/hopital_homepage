@@ -41,24 +41,22 @@ export default function Media() {
 
       <div className="mt-12 grid gap-5 sm:grid-cols-3">
         {CHANNELS.map(({ icon: Icon, title, desc, cta, href }) => (
-          <div
+          <a
             key={title}
-            className="flex flex-col rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/15"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col rounded-2xl border border-border bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/15"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-tint text-primary">
               <Icon size={24} aria-hidden="true" />
             </div>
             <h3 className="mt-4 text-[1.08rem] font-bold text-ink">{title}</h3>
             <p className="mt-2 flex-1 text-[0.95rem] leading-[1.7] text-ink-soft">{desc}</p>
-            <a
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="-mb-2 mt-2 inline-flex items-center py-3 text-[0.95rem] font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-dark"
-            >
+            <span className="-mb-2 mt-2 inline-flex items-center py-3 text-[0.95rem] font-semibold text-primary underline decoration-primary/30 underline-offset-4 group-hover:text-primary-dark">
               {cta}
-            </a>
-          </div>
+            </span>
+          </a>
         ))}
       </div>
     </section>
