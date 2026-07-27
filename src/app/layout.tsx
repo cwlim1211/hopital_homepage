@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Noto_Serif_KR } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const pretendard = localFont({
@@ -22,6 +23,11 @@ export const metadata: Metadata = {
   title: "화이팅통증의학과의원 | Fighting! Pain Clinic",
   description:
     "화이팅통증의학과의원 홈페이지. 신경차단술, 도수치료, 체외충격파치료 등 정확한 진단과 편안한 치료로 환자의 통증에 공감합니다.",
+  verification: {
+    other: {
+      "naver-site-verification": "1b1d9f2fe36b7f1275f99fefcb6b6110108cfe34",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -37,6 +43,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white text-ink">
         {children}
       </body>
+      <GoogleAnalytics gaId="G-03957GEW18" />
     </html>
   );
 }
