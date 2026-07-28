@@ -126,7 +126,7 @@ export default function Branches() {
               >
                 <span
                   className={`mr-1.5 inline-flex h-4 w-4 items-center justify-center rounded-full text-[0.6rem] text-white ${
-                    pin.num === 1 ? "bg-primary" : "bg-rose-500"
+                    pin.num === 1 ? "bg-[#0052A4]" : "bg-[#00A84D]"
                   }`}
                 >
                   {pin.num}
@@ -178,7 +178,7 @@ export default function Branches() {
                 <div className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary-tint px-3 py-1.5 text-[0.8rem] font-bold text-primary-dark">
                   <span
                     className={`flex h-4 w-4 items-center justify-center rounded-full text-[0.6rem] text-white ${
-                      b.num === 1 ? "bg-primary" : "bg-rose-500"
+                      b.num === 1 ? "bg-[#0052A4]" : "bg-[#00A84D]"
                     }`}
                   >
                     {b.num}
