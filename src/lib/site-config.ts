@@ -1,5 +1,6 @@
 // 병원 기본 정보
 export const siteConfig = {
+  siteUrl: "https://www.fightingpain.co.kr",
   name: "화이팅통증의학과의원",
   nameEn: "Fighting! Pain Clinic",
   phone: "02-960-7585",

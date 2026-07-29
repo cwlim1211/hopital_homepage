@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Noto_Serif_KR } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { siteConfig } from "@/lib/site-config";
+import { medicalClinicJsonLd } from "@/lib/medical-schema";
 import "./globals.css";
 
 const pretendard = localFont({
@@ -20,6 +22,7 @@ const notoSerifKr = Noto_Serif_KR({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.siteUrl),
   title: "화이팅통증의학과의원 | Fighting! Pain Clinic",
   description:
     "화이팅통증의학과의원 홈페이지. 신경차단술, 도수치료, 체외충격파치료 등 정확한 진단과 편안한 치료로 환자의 통증에 공감합니다.",
@@ -41,6 +44,12 @@ export default function RootLayout({
       className={`${pretendard.variable} ${notoSerifKr.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(medicalClinicJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         {children}
       </body>
       <GoogleAnalytics gaId="G-03957GEW18" />
