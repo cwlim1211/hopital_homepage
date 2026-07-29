@@ -9,27 +9,27 @@ import { siteConfig } from "@/lib/site-config";
 const NAV_ITEMS = [
   {
     label: "병원소개",
-    href: "#about",
+    href: "/#about",
     children: [
-      { href: "#about", label: "인사말 · 의료진소개" },
-      { href: "#facilities", label: "장비 · 시설" },
-      { href: "#core-values", label: "핵심가치" },
-      { href: "#branches", label: "지점안내" },
-      { href: "#media", label: "영상 · 블로그" },
+      { href: "/#about", label: "인사말 · 의료진소개" },
+      { href: "/#facilities", label: "장비 · 시설" },
+      { href: "/#core-values", label: "핵심가치" },
+      { href: "/#branches", label: "지점안내" },
+      { href: "/#media", label: "영상 · 블로그" },
     ],
   },
   {
     label: "진료안내",
-    href: "#services",
+    href: "/services",
     children: [
-      { href: "#services", label: "진료과목" },
-      { href: "#nerve-block", label: "영상 유도 신경차단술" },
-      { href: "#ultrasound-injection", label: "초음파 유도 주사치료" },
-      { href: "#pricing", label: "비급여 진료비" },
+      { href: "/services", label: "진료과목" },
+      { href: "/services#nerve-block", label: "영상 유도 신경차단술" },
+      { href: "/services#ultrasound-injection", label: "초음파 유도 주사치료" },
+      { href: "/services#pricing", label: "비급여 진료비" },
     ],
   },
-  { href: "#location", label: "오시는길" },
-  { href: "#booking", label: "예약안내" },
+  { href: "/#location", label: "오시는길" },
+  { href: "/#booking", label: "예약안내" },
 ] as const;
 
 export default function Header() {
@@ -69,7 +69,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
         <Link
-          href="#top"
+          href="/#top"
           className="flex shrink-0 items-center gap-2 py-2"
           aria-label={`${siteConfig.name} 홈으로 이동`}
         >

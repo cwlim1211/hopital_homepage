@@ -4,6 +4,9 @@ import { Noto_Serif_KR } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { siteConfig } from "@/lib/site-config";
 import { medicalClinicJsonLd } from "@/lib/medical-schema";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import NoticePopup from "@/components/NoticePopup";
 import "./globals.css";
 
 const pretendard = localFont({
@@ -50,7 +53,10 @@ export default function RootLayout({
             __html: JSON.stringify(medicalClinicJsonLd).replace(/</g, "\\u003c"),
           }}
         />
+        <NoticePopup />
+        <Header />
         {children}
+        <Footer />
       </body>
       <GoogleAnalytics gaId="G-03957GEW18" />
     </html>
