@@ -5,7 +5,7 @@ import { siteConfig } from "./site-config";
 export const medicalClinicJsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
-  name: siteConfig.name,
+  name: `${siteConfig.name} 청량리점`,
   alternateName: siteConfig.nameEn,
   url: siteConfig.siteUrl,
   logo: `${siteConfig.siteUrl}/logo.png`,
